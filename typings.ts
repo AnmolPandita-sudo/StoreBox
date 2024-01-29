@@ -1,11 +1,16 @@
 export type FileType = {
-    is(is: any): void;
-    id: string;
-    fullname: string;
-    filename: string;
-    fileName: string;
-    timestamp: Date;
-    downloadURL: string;
-    type: string;
-    size: number;
+    // id: string;
+    // filename: string;
+    // fullname: string;
+    // timestamp: Date;
+    // downloadURL: string;
+    // type: string;
+    // size: number;
+    id: string; 
+    filename: any; 
+    timestamp: Date; 
+    fullName: any; 
+    downloadURL: any; 
+    type: any; 
+    size: any;
 }

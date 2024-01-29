@@ -31,6 +31,7 @@
     "react-file-icon": "^1.4.0",
     "react-firebase-hooks": "^5.1.1",
     "react-hot-toast": "^2.4.1",
+    "sharp": "^0.33.2",
     "table": "github:tanstack/react-table",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
