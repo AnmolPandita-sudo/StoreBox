@@ -8,17 +8,20 @@ import { Button } from "./ui/button";
 function Header() {
   return (
     <header className="flex items-center justify-between ">
-      <Link href="/" className="flex items-center space-x-3 md:space-x-5">
+      <Link
+        href="/"
+        className="flex items-center space-x-3 md:space-x-5 mt-2 ml-2"
+      >
         <div>
           <Image
             src={logo}
             height={50}
             width={50}
             alt={""}
-            className="rounded-2xl m-2"
+            className="rounded-2xl"
           />
         </div>
-        <h1 className="md:text-2xl text-lg font-serif">Dropbox 2.0</h1>
+        <h1 className="md:text-2xl text-lg font-serif">StoreBox</h1>
       </Link>
       <div className=" px-5 flex space-x-2 items-center">
         <ThemeToggler />

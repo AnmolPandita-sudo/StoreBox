@@ -7,21 +7,21 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-center bg-[#c6baba] dark:bg-slate-700">
         <div className="p-10 flex flex-col bg-[#c6baba] dark:bg-slate-700 dark:text-white space-y-5 text-center">
           <h1 className="text-3xl  font-bold">
-            Welcome to Dropbox 2.0 !!! <br />
-            Upgrade to Dropbox 2.0: Elevate your file-sharing game effortlessly.
+            Welcome to StoreBox !!! <br />
+            Upgrade to StoreBox: Elevate your file-sharing game effortlessly.
           </h1>
           <p className="pb-10">
             Hey there! 👋 We're thrilled to have you on board for our exciting
-            new project, Dropbox 2.0! Get ready to take your file storage and
+            new project, StoreBox! Get ready to take your file storage and
             sharing experience to the next level. Whether you're a student, a
             professional, or simply someone who loves keeping things organized,
-            we've got you covered. With Dropbox 2.0, you'll enjoy a sleek
+            we've got you covered. With StoreBox, you'll enjoy a sleek
             interface, enhanced security features, and seamless collaboration
             tools. Share files effortlessly, access them from anywhere, and rest
             assured knowing your data is in safe hands. We're here to make your
             life easier, whether you're juggling assignments, collaborating on
             projects, or simply storing precious memories. So go ahead, dive in,
-            and explore all that Dropbox 2.0 has to offer. Welcome aboard, and
+            and explore all that StoreBox has to offer. Welcome aboard, and
             happy sharing! 🚀
           </p>
           {/* <Link
@@ -44,11 +44,11 @@ export default function Home() {
         </div>
       </div>
       <p className="bg-[#c6baba] md:bg-[#e8c3c3] dark:bg-slate-800 text-center font-bold text-xl pt-10">
-        Dropbox 2.0 Student Project Disclaimer
+        StoreBox Student Project Disclaimer
       </p>
-      <p className="bg-[#c6baba] md:bg-[#e8c3c3] dark:bg-slate-800 text-center font-light p-[26px]">
-        Hey there! Welcome to our Dropbox 2.0 project! We've been working hard
-        on this to provide you with a cool platform for storing and sharing your
+      <p className="bg-[#c6baba] md:bg-[#e8c3c3] dark:bg-slate-800 text-center font-light p-[27.5px]">
+        Hey there! Welcome to our StoreBox project! We've been working hard on
+        this to provide you with a cool platform for storing and sharing your
         files. However, there are a few things you should know. We've put in
         some security measures, but just like any project, it's not foolproof,
         so please be cautious with your sensitive information. Sometimes the
