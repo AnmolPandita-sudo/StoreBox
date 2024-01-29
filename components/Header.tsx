@@ -23,7 +23,7 @@ function Header() {
         </div>
         <h1 className="md:text-2xl text-lg font-serif">StoreBox</h1>
       </Link>
-      <div className=" px-5 flex space-x-2 items-center">
+      <div className=" px-5 flex space-x-2 items-center mt-2">
         <ThemeToggler />
         <UserButton afterSignOutUrl="/" />
 
