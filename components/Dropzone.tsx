@@ -38,13 +38,32 @@ function Dropzone() {
     setLoading(true);
     const toastId = toast.loading("Uploading...");
 
+    let fileType = selectedFile.type;
+    // check for some file type which i was facing issue not displaying its file type correctly
+    if (
+      fileType ===
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    ) {
+      fileType = "application/docx";
+    } else if (
+      fileType ===
+      "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    ) {
+      fileType = "application/ppt";
+    } else if (
+      fileType ===
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    ) {
+      fileType = "application/xlsx";
+    }
+
     const docRef = await addDoc(collection(db, "users", user.id, "files"), {
       userId: user.id,
       fileName: selectedFile.name,
       fullName: user.fullName,
       profileImg: user.imageUrl,
       timestamp: serverTimestamp(),
-      type: selectedFile.type,
+      type: fileType,
       size: selectedFile.size,
     });
 
@@ -84,17 +103,15 @@ function Dropzone() {
               className={cn(
                 "w-full h-52 flex justify-center items-center p-5 border border-dashed rounded-xl text-center",
                 isDragActive
-                  ? "bg-[#5a7ebd] text-4xl text-white animate-pulse  font-playfair-display"
-                  : "bg-[#96bea4] dark:bg-slate-800/80 md:text-4xl text-xl font-playball"
+                  ? "bg-[#5a7ebd] text-4xl text-white animate-pulse font-playfair-display"
+                  : "bg-[#96bea4] dark:bg-slate-800/80 md:text-4xl text-xl font-dancing-script"
               )}
             >
               <input {...getInputProps()} />
               {!isDragActive && "Click and/or drop a file to upload!"}
               {isDragActive && !isDragReject && "Drop the file to upload"}
               {isDragReject && "File not accepted, Sorry!"}
-              {isFileTooLarge && (
-                <div className="text-danger mt-2">File is too large....</div>
-              )}
+              {isFileTooLarge && "File is too large...."}
             </div>
           </section>
         );
