@@ -2,6 +2,7 @@ export const COLOR_EXTENSION_MAP: { [key: string]:string } = {
     pdf: "#92c6ff", // Light blue
     txt: "#cccccc", // Light grey
     docx: "#0046ff", // Light blue
+    doc: "#0046ff",
     jpg: "#ff9999", // Light red
     png: "#99ff99", // Light green
     xls: "#ffcc00", // Light yellow
